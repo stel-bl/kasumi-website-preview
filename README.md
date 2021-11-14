@@ -1,5 +1,5 @@
-Background color: #DFDFDF
-Text color: #424242
+Background color: #DFDFDF \n
+Text color: #424242 \n  
 Dominant color: #5C68D3
 
 logo font: Righteous
