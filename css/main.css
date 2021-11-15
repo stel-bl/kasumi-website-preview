@@ -619,7 +619,7 @@ footer .footer-container .section3 {
   border: none;
   color: white;
   font-size: 1.3rem;
-  width: 60%;
+  min-width: 60%;
 }
 
 @media only screen and (max-width: 700px) {
