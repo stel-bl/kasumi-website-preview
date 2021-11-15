@@ -8,6 +8,7 @@
 body {
   font-family: "Red Hat Text", sans-serif;
   overflow-x: hidden;
+  background: #dfdfdf;
 }
 
 nav {
@@ -314,19 +315,75 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background: #dfdfdf;
+  background: #5c68d3;
   background-size: cover;
   overflow: hidden;
+  -webkit-clip-path: polygon(0 33%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 33%, 100% 0, 100% 100%, 0 100%);
 }
 
-footer .footer-image {
-  width: 100%;
-  position: absolute;
+footer .footer-container {
+  width: 100vw;
+  height: 70%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer-container .section1,
+footer .footer-container .section2,
+footer .footer-container .section3 {
+  width: 30%;
   height: 100%;
+}
+
+footer .footer-container .section1 {
+  height: 80%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+footer .footer-container .section1 .icons a {
+  color: #ffffff;
+  margin-right: 25px;
+}
+
+footer .footer-container .section1 h3 {
+  color: white;
+}
+
+footer .footer-container .section2 ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  font-size: 1.5rem;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-container .section3 {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */

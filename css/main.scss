@@ -7,6 +7,7 @@
 body {
   font-family: "Red Hat Text", sans-serif;
   overflow-x: hidden;
+  background: #dfdfdf;
 }
 
 nav {
@@ -214,14 +215,55 @@ footer {
   width: 100vw;
   height: 40vh;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  background: #dfdfdf;
+  background: #5c68d3;
   background-size: cover;
   overflow: hidden;
-  .footer-image {
-    width: 100%;
-    position: absolute;
-    height: 100%;
+  clip-path: polygon(0 33%, 100% 0, 100% 100%, 0 100%);
+
+  .footer-container {
+    width: 100vw;
+    height: 70%;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .section1,
+    .section2,
+    .section3 {
+      width: 30%;
+      height: 100%;
+    }
+    .section1 {
+      height: 80%;
+      display: grid;
+      place-items: center;
+      .icons {
+        a {
+          color: #ffffff;
+          margin-right: 25px;
+        }
+      }
+      h3 {
+        color: white;
+      }
+    }
+    .section2 {
+      ul {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        font-size: 1.5rem;
+        color: white;
+        flex-direction: column;
+      }
+    }
+    .section3 {
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 1.2rem;
+    }
   }
 }
