@@ -668,8 +668,8 @@ footer .footer-container .section3 {
     display: block;
     padding: 0rem 0rem;
     position: absolute;
-    top: 0.5rem;
-    left: 0.5rem;
+    top: 2rem;
+    left: 1.5rem;
   }
   nav .logo2 img {
     width: 60%;
@@ -740,7 +740,7 @@ footer .footer-container .section3 {
     text-align: center;
   }
   .features .features-container .features-text-container .features-card {
-    width: 80%;
+    width: 70%;
   }
   .features .features-container .features-text-container .features-card h1 {
     font-size: 2rem;
@@ -754,7 +754,7 @@ footer .footer-container .section3 {
   }
   .features .features-container .features-image .embla {
     overflow: hidden;
-    width: 100%;
+    width: 70%;
   }
   .features .features-container .features-image .embla__container {
     display: -webkit-box;
@@ -835,8 +835,11 @@ footer .footer-container .section3 {
     width: 90vw;
     margin: 4vh 0vh;
   }
-  .downloads .container .card .text-area h1 {
-    font-size: 1.7rem;
+  .downloads .container .card .text-area {
+    margin: 0vh 2vh;
+  }
+  .downloads .container .card .text-area h2 {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
