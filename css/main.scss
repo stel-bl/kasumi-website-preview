@@ -10,6 +10,23 @@ body {
   background: #dfdfdf;
 }
 
+.hamburger {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  z-index: 3;
+  .line1,
+  .line2,
+  .line3 {
+    width: 30px;
+    height: 3px;
+    background: white;
+  }
+  .line2 {
+    margin: 5px 0px;
+  }
+}
+
 nav {
   width: 100vw;
   height: auto;
@@ -22,6 +39,9 @@ nav {
   justify-content: space-between;
   .logo {
     padding: 0rem 6rem;
+  }
+  .logo2 {
+    display: none;
   }
   .nav-links {
     display: flex;
@@ -303,6 +323,158 @@ footer {
       place-items: center;
       color: white;
       font-size: 1.2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    .nav-links {
+      display: none;
+    }
+    .logo {
+      display: none;
+    }
+    .logo2 {
+      display: block;
+      padding: 0rem 0rem;
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      img {
+        width: 60%;
+      }
+    }
+  }
+
+  .home {
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    padding: 0rem 0rem;
+    .home-text {
+      padding: 1rem 0rem;
+      width: 100%;
+      text-align: center;
+      z-index: 3;
+      color: rgb(231, 231, 231);
+      h1 {
+        font-size: 3rem;
+        width: 100%;
+      }
+      p {
+        padding: 0rem 1rem;
+        font-size: 1.2em;
+        width: 100vw;
+        line-height: 2rem;
+        width: 100%;
+      }
+    }
+    .home-image {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        margin-top: 5vh;
+      }
+    }
+    .circle {
+      top: -50vw;
+      left: -50vw;
+      width: 200vw;
+      height: 200vw;
+    }
+  }
+  .features {
+    height: auto;
+    width: 100vw;
+    .features-container {
+      flex-direction: column;
+      .features-text-container {
+        padding: 1rem 0rem;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        .features-card {
+          width: 80%;
+          h1 {
+            font-size: 2rem;
+          }
+          h3 {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .features-image {
+        width: 100%;
+        padding: 1rem 0rem;
+        img {
+          width: 70%;
+          margin: 4vh 0vh;
+        }
+      }
+    }
+  }
+  .team {
+    height: auto;
+    padding: 1rem 0rem;
+    .container {
+      height: auto;
+      margin: 5vh 0vh;
+      .card {
+        width: 90vw;
+        padding: 1rem 0rem;
+        margin: 4vh 0vh;
+        .image-area {
+          img {
+            width: 75px;
+            height: 75px;
+          }
+        }
+        .text-area {
+          height: 20vh;
+          h1 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+  .footer-box-container {
+    .footer-box {
+      height: 30vh;
+      width: 90vw;
+      h1 {
+        font-size: 1.5rem;
+        width: 90%;
+      }
+      div {
+        flex-direction: column;
+        width: 100%;
+        h2 {
+          font-size: 1.3rem;
+        }
+        .download {
+          padding: 0.4rem 2rem;
+          margin: 2vh 0vh;
+        }
+      }
+    }
+  }
+  footer {
+    .footer-container {
+      .section1,
+      .section2 {
+        display: none;
+      }
+      .section3 {
+        width: 100%;
+        h1 {
+          font-size: 2rem;
+        }
+      }
     }
   }
 }

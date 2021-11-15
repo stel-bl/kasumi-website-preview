@@ -11,6 +11,25 @@ body {
   background: #dfdfdf;
 }
 
+.hamburger {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  z-index: 3;
+}
+
+.hamburger .line1,
+.hamburger .line2,
+.hamburger .line3 {
+  width: 30px;
+  height: 3px;
+  background: white;
+}
+
+.hamburger .line2 {
+  margin: 5px 0px;
+}
+
 nav {
   width: 100vw;
   height: auto;
@@ -31,6 +50,10 @@ nav {
 
 nav .logo {
   padding: 0rem 6rem;
+}
+
+nav .logo2 {
+  display: none;
 }
 
 nav .nav-links {
@@ -447,5 +470,161 @@ footer .footer-container .section3 {
   place-items: center;
   color: white;
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  nav .nav-links {
+    display: none;
+  }
+  nav .logo {
+    display: none;
+  }
+  nav .logo2 {
+    display: block;
+    padding: 0rem 0rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+  nav .logo2 img {
+    width: 60%;
+  }
+  .home {
+    width: 100vw;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0rem 0rem;
+  }
+  .home .home-text {
+    padding: 1rem 0rem;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+    color: #e7e7e7;
+  }
+  .home .home-text h1 {
+    font-size: 3rem;
+    width: 100%;
+  }
+  .home .home-text p {
+    padding: 0rem 1rem;
+    font-size: 1.2em;
+    width: 100vw;
+    line-height: 2rem;
+    width: 100%;
+  }
+  .home .home-image {
+    height: 100vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home .home-image img {
+    margin-top: 5vh;
+  }
+  .home .circle {
+    top: -50vw;
+    left: -50vw;
+    width: 200vw;
+    height: 200vw;
+  }
+  .features {
+    height: auto;
+    width: 100vw;
+  }
+  .features .features-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .features .features-container .features-text-container {
+    padding: 1rem 0rem;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+  }
+  .features .features-container .features-text-container .features-card {
+    width: 80%;
+  }
+  .features .features-container .features-text-container .features-card h1 {
+    font-size: 2rem;
+  }
+  .features .features-container .features-text-container .features-card h3 {
+    font-size: 1.2rem;
+  }
+  .features .features-container .features-image {
+    width: 100%;
+    padding: 1rem 0rem;
+  }
+  .features .features-container .features-image img {
+    width: 70%;
+    margin: 4vh 0vh;
+  }
+  .team {
+    height: auto;
+    padding: 1rem 0rem;
+  }
+  .team .container {
+    height: auto;
+    margin: 5vh 0vh;
+  }
+  .team .container .card {
+    width: 90vw;
+    padding: 1rem 0rem;
+    margin: 4vh 0vh;
+  }
+  .team .container .card .image-area img {
+    width: 75px;
+    height: 75px;
+  }
+  .team .container .card .text-area {
+    height: 20vh;
+  }
+  .team .container .card .text-area h1 {
+    font-size: 1.5rem;
+  }
+  .footer-box-container .footer-box {
+    height: 30vh;
+    width: 90vw;
+  }
+  .footer-box-container .footer-box h1 {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  .footer-box-container .footer-box div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .footer-box-container .footer-box div h2 {
+    font-size: 1.3rem;
+  }
+  .footer-box-container .footer-box div .download {
+    padding: 0.4rem 2rem;
+    margin: 2vh 0vh;
+  }
+  footer .footer-container .section1,
+  footer .footer-container .section2 {
+    display: none;
+  }
+  footer .footer-container .section3 {
+    width: 100%;
+  }
+  footer .footer-container .section3 h1 {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
