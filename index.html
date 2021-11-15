@@ -36,6 +36,7 @@
       </div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
+        <li><a href="./downloads.html">Downloads</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#team">Team</a></li>
       </ul>
@@ -50,7 +51,9 @@
           adipisicing elit. Perspiciatis porro provident cum, accusamus facere
           natus in, perferendis fugiat corporis.
         </p>
-        <button class="download">Downloads</button>
+        <a href="./downloads.html">
+          <button class="download">Downloads</button>
+        </a>
       </div>
       <div class="home-image">
         <img src="./Images/ss.png" alt="Screenshot" />
@@ -83,7 +86,15 @@
           </div>
         </div>
         <div class="features-image">
-          <img src="./Images/ss.png" alt="Screenshot" />
+          <div class="embla">
+            <div class="embla__container">
+              <img src="./images/ss1.png" class="embla__slide" />
+              <img src="./images/ss2.png" class="embla__slide" />
+              <img src="./images/ss3.png" class="embla__slide" />
+              <img src="./images/ss4.png" class="embla__slide" />
+              <img src="./images/ss5.png" class="embla__slide" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -165,7 +176,9 @@
         <h1>What are you waiting for?</h1>
         <div>
           <h2>Get it for your device now:</h2>
-          <button class="download">Download</button>
+          <a href="./downloads.html">
+            <button class="download">Download</button>
+          </a>
         </div>
       </div>
     </div>
@@ -193,6 +206,52 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      const emblaNode = document.querySelector(".embla");
+
+      const autoplay = (embla, interval) => {
+        let timer = 0;
+
+        const play = () => {
+          stop();
+          requestAnimationFrame(
+            () => (timer = window.setTimeout(next, interval))
+          );
+        };
+
+        const stop = () => {
+          window.clearTimeout(timer);
+          timer = 0;
+        };
+
+        const next = () => {
+          if (embla.canScrollNext()) {
+            embla.scrollNext();
+          } else {
+            embla.scrollTo(0);
+          }
+          play();
+        };
+
+        return { play, stop };
+      };
+
+      const options = {
+        loop: true,
+      };
+      // Initialize the carousel
+      const embla = EmblaCarousel(emblaNode, options);
+      const autoplayer = autoplay(embla, 3000);
+      embla.on("init", autoplayer.play);
+      embla.on("pointerDown", autoplayer.stop);
+      embla.on("pointerUp", autoplayer.play);
+    </script>
     <script src="/app.js"></script>
   </body>
 </html>
