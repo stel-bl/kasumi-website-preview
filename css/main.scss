@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Red Hat Text", sans-serif;
   overflow-x: hidden;
@@ -11,14 +15,22 @@ body {
 }
 
 .hamburger {
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   right: 1rem;
-  z-index: 3;
+  z-index: 5;
+  background: #5c68d3;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   .line1,
   .line2,
   .line3 {
-    width: 30px;
+    width: 25px;
     height: 3px;
     background: white;
   }
@@ -51,6 +63,10 @@ nav {
     width: 40%;
     li {
       font-size: 1.3rem;
+      a {
+        text-decoration: none;
+        color: #424242;
+      }
     }
   }
 }
@@ -329,8 +345,26 @@ footer {
 
 @media only screen and (max-width: 700px) {
   nav {
+    z-index: 4;
     .nav-links {
-      display: none;
+      position: fixed;
+      top: 0vh;
+      width: 100vw;
+      height: 50vh;
+      background: rgb(201, 201, 201);
+      flex-direction: column;
+      transform: translateY(-50vh);
+      transition: transform 300ms ease;
+      justify-content: center;
+      li {
+        margin: 4vh 0vh;
+        font-size: 25px;
+        color: #424242;
+      }
+    }
+    .nav-active {
+      transform: translateY(0vh);
+      z-index: 4;
     }
     .logo {
       display: none;

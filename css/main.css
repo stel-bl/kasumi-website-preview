@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Red Hat Text", sans-serif;
   overflow-x: hidden;
@@ -12,16 +16,33 @@ body {
 }
 
 .hamburger {
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   right: 1rem;
-  z-index: 3;
+  z-index: 5;
+  background: #5c68d3;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .hamburger .line1,
 .hamburger .line2,
 .hamburger .line3 {
-  width: 30px;
+  width: 25px;
   height: 3px;
   background: white;
 }
@@ -71,6 +92,11 @@ nav .nav-links {
 
 nav .nav-links li {
   font-size: 1.3rem;
+}
+
+nav .nav-links li a {
+  text-decoration: none;
+  color: #424242;
 }
 
 .home {
@@ -473,8 +499,38 @@ footer .footer-container .section3 {
 }
 
 @media only screen and (max-width: 700px) {
+  nav {
+    z-index: 4;
+  }
   nav .nav-links {
-    display: none;
+    position: fixed;
+    top: 0vh;
+    width: 100vw;
+    height: 50vh;
+    background: #c9c9c9;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateY(-50vh);
+            transform: translateY(-50vh);
+    -webkit-transition: -webkit-transform 300ms ease;
+    transition: -webkit-transform 300ms ease;
+    transition: transform 300ms ease;
+    transition: transform 300ms ease, -webkit-transform 300ms ease;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .nav-links li {
+    margin: 4vh 0vh;
+    font-size: 25px;
+    color: #424242;
+  }
+  nav .nav-active {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+    z-index: 4;
   }
   nav .logo {
     display: none;
