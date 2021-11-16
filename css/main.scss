@@ -520,7 +520,7 @@ footer {
         height: 100vh;
         text-align: center;
         .features-card {
-          width: 70%;
+          width: 90%;
           h1 {
             font-size: 2rem;
           }
@@ -554,6 +554,9 @@ footer {
   .team {
     height: auto;
     padding: 1rem 0rem;
+    .main-head {
+      font-size: 2.5rem;
+    }
     .container {
       height: auto;
       margin: 5vh 0vh;
@@ -570,7 +573,13 @@ footer {
         .text-area {
           height: 20vh;
           h1 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
+          }
+          h3 {
+            font-size: 1rem;
+          }
+          .icons {
+            font-size: 1rem !important;
           }
         }
       }
@@ -607,7 +616,10 @@ footer {
       .section3 {
         width: 100%;
         h1 {
-          font-size: 2rem;
+          font-size: 1.5rem;
+        }
+        h5 {
+          width: 90%;
         }
       }
     }
