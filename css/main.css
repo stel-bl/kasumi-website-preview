@@ -747,6 +747,7 @@ footer .footer-container .section3 h5 {
   }
   .features .features-container .features-text-container .features-card {
     width: 90%;
+    margin: 9vh 0vh;
   }
   .features .features-container .features-text-container .features-card h1 {
     font-size: 2rem;
