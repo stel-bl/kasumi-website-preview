@@ -142,7 +142,7 @@ nav .nav-links li a {
 .home .home-text p {
   font-size: 1.5rem;
   line-height: 2.5rem;
-  width: 90%;
+  width: 70%;
   font-weight: bold;
   margin: 2rem 0rem;
 }
@@ -518,6 +518,12 @@ footer .footer-container .section3 {
   font-size: 1.2rem;
 }
 
+footer .footer-container .section3 h5 {
+  width: 75%;
+  margin-top: -10vh;
+  font-weight: lighter;
+}
+
 .downloads {
   width: 100vw;
   min-height: 100vh;
@@ -718,10 +724,10 @@ footer .footer-container .section3 {
     margin-top: 5vh;
   }
   .home .circle {
-    top: -50vw;
-    left: -50vw;
-    width: 200vw;
-    height: 200vw;
+    top: -25vw;
+    left: -25vw;
+    width: 150vw;
+    height: 150vw;
   }
   .features {
     height: auto;
