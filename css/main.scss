@@ -301,8 +301,8 @@ nav {
       justify-content: space-around;
       width: clamp(50%, 65%, 85%);
       .download {
-        padding: 1.2vw 3vw;
-        font-size: 1.3vw;
+        padding: 0.7vw 3vw;
+        font-size: 1.5vw;
         background: #5c68d3;
         color: white;
         border-radius: 0.3rem;
@@ -363,6 +363,7 @@ footer {
     }
     .section3 {
       display: grid;
+      width: 40% !important;
       place-items: center;
       color: white;
       font-size: 1.2rem;
