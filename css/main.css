@@ -71,7 +71,7 @@ nav {
 }
 
 nav .logo {
-  padding: 0rem 6rem;
+  padding: 0rem 3rem;
 }
 
 nav .logo2 {
@@ -88,7 +88,7 @@ nav .nav-links {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
-  width: 40%;
+  width: clamp(40%, 50%, 60%);
 }
 
 nav .nav-links li {
@@ -102,7 +102,7 @@ nav .nav-links li a {
 
 .home {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,8 +117,8 @@ nav .nav-links li a {
 }
 
 .home .circle {
-  width: 50vw;
-  height: 50vw;
+  width: clamp(50vw, 60vw, 80vw);
+  height: clamp(50vw, 60vw, 80vw);
   border-radius: 50%;
   position: absolute;
   background: #5c68d3c4;
@@ -128,23 +128,23 @@ nav .nav-links li a {
 }
 
 .home .home-text {
-  width: 60%;
-  padding: 0rem 6rem;
+  width: clamp(50%, 65%, 70%);
+  padding: 0rem 3rem;
   color: #424242;
   margin-top: 10vh;
 }
 
 .home .home-text h1 {
-  font-size: 5rem;
-  font-weight: bolder;
+  font-size: 4.5vw;
+  font-weight: bold;
 }
 
 .home .home-text p {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  width: 70%;
-  font-weight: bold;
-  margin: 2rem 0rem;
+  font-size: 2vw;
+  line-height: 3vw;
+  width: clamp(60%, 70%, 80%);
+  font-weight: lighter;
+  margin: 2vh 0;
 }
 
 .home .home-text .download {
@@ -164,9 +164,9 @@ nav .nav-links li a {
 }
 
 .home .home-image img {
-  width: 65%;
+  width: clamp(60%, 65%, 75%);
   z-index: 1;
-  margin-top: 25vh;
+  margin-top: 10vh;
 }
 
 .features {
@@ -182,7 +182,7 @@ nav .nav-links li a {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background: #dfdfdf;
 }
@@ -210,8 +210,8 @@ nav .nav-links li a {
 }
 
 .features .features-container .features-text-container {
-  width: 50%;
-  height: 100%;
+  width: clamp(50vw, 60vw, 80vw);
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,8 +227,8 @@ nav .nav-links li a {
 }
 
 .features .features-container .features-text-container .features-card {
-  width: 50%;
-  height: 15vh;
+  width: 70%;
+  min-height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,6 +237,7 @@ nav .nav-links li a {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #424242;
+  margin: 5vh 0vh;
 }
 
 .features .features-container .features-text-container .features-card h1 {
@@ -249,7 +250,7 @@ nav .nav-links li a {
 }
 
 .features .features-container .features-image {
-  width: 50%;
+  width: clamp(50vw, 70vw, 90vw);
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -259,7 +260,7 @@ nav .nav-links li a {
 
 .features .features-container .features-image .embla {
   overflow: hidden;
-  width: 35%;
+  width: clamp(40%, 40%, 60%);
 }
 
 .features .features-container .features-image .embla__container {
@@ -282,7 +283,7 @@ nav .nav-links li a {
 
 .team {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,7 +311,7 @@ nav .nav-links li a {
 
 .team .container {
   width: 100vw;
-  height: 90vh;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,9 +326,10 @@ nav .nav-links li a {
 }
 
 .team .container .card {
-  width: 30vw;
-  margin: 0vh 10vh;
-  height: 30%;
+  width: clamp(30vw, 35vw, 90vw);
+  margin: 0vh 5vh;
+  min-height: 20vh;
+  padding: 1vw 0vw;
   background: white;
   border-radius: 1rem;
   display: -webkit-box;
@@ -342,7 +344,8 @@ nav .nav-links li a {
 }
 
 .team .container .card .image-area {
-  width: 40%;
+  width: clamp(35%, 40%, 45%);
+  height: clamp(35%, 40%, 45%);
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -350,13 +353,13 @@ nav .nav-links li a {
 
 .team .container .card .image-area img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 10vw;
+  height: 10vw;
 }
 
 .team .container .card .text-area {
-  width: 60%;
-  height: 70%;
+  width: clamp(50%, 60%, 70%);
+  min-height: 20vh;
   color: #424242;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,7 +373,13 @@ nav .nav-links li a {
 }
 
 .team .container .card .text-area h1 {
+  font-size: 2.2vw;
   margin-bottom: -2vh;
+}
+
+.team .container .card .text-area h3 {
+  font-size: 1.5vw;
+  font-weight: lighter;
 }
 
 .team .container .card .text-area .icons a {
@@ -389,13 +398,14 @@ nav .nav-links li a {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100vw;
-  height: 25vh;
+  min-height: 25vh;
   margin-bottom: -15vh;
 }
 
 .footer-box-container .footer-box {
   width: 60vw;
-  height: 25vh;
+  min-height: 24vh;
+  padding: 2vw 0vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,7 +425,13 @@ nav .nav-links li a {
 }
 
 .footer-box-container .footer-box h1 {
-  font-size: 4rem;
+  font-size: 3vw;
+  font-weight: bolder;
+}
+
+.footer-box-container .footer-box h2 {
+  font-size: 1.5vw;
+  font-weight: bold;
 }
 
 .footer-box-container .footer-box div {
@@ -427,12 +443,12 @@ nav .nav-links li a {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 60%;
+  width: clamp(50%, 65%, 85%);
 }
 
 .footer-box-container .footer-box div .download {
-  padding: 0.7rem 4rem;
-  font-size: 1.3rem;
+  padding: 1.2vw 3vw;
+  font-size: 1.3vw;
   background: #5c68d3;
   color: white;
   border-radius: 0.3rem;
@@ -520,7 +536,7 @@ footer .footer-container .section3 {
 
 footer .footer-container .section3 h5 {
   width: 75%;
-  margin-top: -10vh;
+  margin-top: -5vh;
   font-weight: lighter;
 }
 
@@ -708,7 +724,7 @@ footer .footer-container .section3 h5 {
     width: 100%;
   }
   .home .home-image {
-    height: 100vh;
+    min-height: 100%;
     width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -721,7 +737,7 @@ footer .footer-container .section3 h5 {
             justify-content: center;
   }
   .home .home-image img {
-    margin-top: 5vh;
+    margin-top: auto;
   }
   .home .circle {
     top: -25vw;
@@ -859,6 +875,15 @@ footer .footer-container .section3 h5 {
   }
   .downloads .container .card .text-area h2 {
     font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  footer .section2 {
+    display: none;
+  }
+  footer .section3 {
+    width: 70vw !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
