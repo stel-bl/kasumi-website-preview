@@ -849,6 +849,7 @@ footer .footer-container .section3 h5 {
   }
   .footer-box-container .footer-box div .download {
     padding: 0.4rem 2rem !important;
+    font-size: 1rem;
     margin: 2vh 0vh;
   }
   footer .footer-container .section1,
