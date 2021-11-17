@@ -856,7 +856,7 @@ footer .footer-container .section3 h5 {
     display: none;
   }
   footer .footer-container .section3 {
-    width: 100%;
+    width: 100% !important;
   }
   footer .footer-container .section3 h1 {
     font-size: 1.5rem;
