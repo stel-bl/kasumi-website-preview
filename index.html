@@ -278,6 +278,22 @@
       embla.on("pointerDown", autoplayer.stop);
       embla.on("pointerUp", autoplayer.play);
     </script>
+
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          console.log("down");
+          document.querySelector("nav").style.top = "0vh";
+        } else {
+          console.log("up");
+          document.querySelector("nav").style.top = "-10vh";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+
     <script src="/app.js"></script>
   </body>
 </html>

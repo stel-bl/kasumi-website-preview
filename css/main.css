@@ -56,9 +56,9 @@ nav {
   width: 100vw;
   height: auto;
   padding: 1rem 0rem;
-  position: absolute;
+  position: fixed;
   top: 0vh;
-  z-index: 1;
+  z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,6 +68,9 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: white;
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.3s ease;
 }
 
 nav .logo {
