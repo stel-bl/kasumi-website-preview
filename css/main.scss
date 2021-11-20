@@ -116,6 +116,13 @@ nav {
       color: white;
       border-radius: 0.3rem;
       border: none;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      &:hover {
+        background: transparent;
+        color: #424242;
+        outline: 2px solid #5c68d3;
+      }
     }
   }
   .home-image {
@@ -309,6 +316,13 @@ nav {
         color: white;
         border-radius: 0.3rem;
         border: none;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        &:hover {
+          background: transparent;
+          color: #424242;
+          outline: 2px solid #5c68d3;
+        }
       }
     }
   }
@@ -361,6 +375,11 @@ footer {
         font-size: 1.5rem;
         color: white;
         flex-direction: column;
+        li a {
+          font-size: 1.5rem;
+          text-decoration: none;
+          color: white;
+        }
       }
     }
     .section3 {
@@ -401,7 +420,7 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     .card {
-      width: 30vw;
+      width: clamp(35vw, 40vw, 90vw);
       margin: 0vh 10vh;
       height: 25vh;
       background: white;
@@ -438,9 +457,32 @@ footer {
           border: none;
           color: white;
           font-size: 1.3rem;
-          width: 60%;
+          min-width: 60%;
+          cursor: pointer;
+          transition: all 0.4s ease;
+          &:hover {
+            background: transparent;
+            color: #424242;
+            outline: 2px solid #5c68d3;
+          }
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .downloads {
+    .container .card {
+      width: 60vw;
+    }
+  }
+  footer {
+    .section2 {
+      display: none;
+    }
+    .section3 {
+      width: 70vw !important;
     }
   }
 }
@@ -451,6 +493,9 @@ footer {
   }
   nav {
     z-index: 4;
+    position: absolute;
+    top: -5vh;
+    background: transparent;
     .nav-links {
       position: fixed;
       top: 0vh;
@@ -656,17 +701,6 @@ footer {
           }
         }
       }
-    }
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  footer {
-    .section2 {
-      display: none;
-    }
-    .section3 {
-      width: 70vw !important;
     }
   }
 }

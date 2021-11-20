@@ -157,6 +157,15 @@ nav .nav-links li a {
   color: white;
   border-radius: 0.3rem;
   border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.home .home-text .download:hover {
+  background: transparent;
+  color: #424242;
+  outline: 2px solid #5c68d3;
 }
 
 .home .home-image {
@@ -456,6 +465,15 @@ nav .nav-links li a {
   color: white;
   border-radius: 0.3rem;
   border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.footer-box-container .footer-box div .download:hover {
+  background: transparent;
+  color: #424242;
+  outline: 2px solid #5c68d3;
 }
 
 footer {
@@ -529,6 +547,12 @@ footer .footer-container .section2 ul {
           flex-direction: column;
 }
 
+footer .footer-container .section2 ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
 footer .footer-container .section3 {
   display: -ms-grid;
   display: grid;
@@ -588,7 +612,7 @@ footer .footer-container .section3 h5 {
 }
 
 .downloads .container .card {
-  width: 30vw;
+  width: clamp(35vw, 40vw, 90vw);
   margin: 0vh 10vh;
   height: 25vh;
   background: white;
@@ -645,7 +669,28 @@ footer .footer-container .section3 h5 {
   border: none;
   color: white;
   font-size: 1.3rem;
-  width: 60%;
+  min-width: 60%;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.downloads .container .card .text-area .download:hover {
+  background: transparent;
+  color: #424242;
+  outline: 2px solid #5c68d3;
+}
+
+@media only screen and (max-width: 900px) {
+  .downloads .container .card {
+    width: 60vw;
+  }
+  footer .section2 {
+    display: none;
+  }
+  footer .section3 {
+    width: 70vw !important;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -656,6 +701,9 @@ footer .footer-container .section3 h5 {
   }
   nav {
     z-index: 4;
+    position: absolute;
+    top: -5vh;
+    background: transparent;
   }
   nav .nav-links {
     position: fixed;
@@ -880,15 +928,6 @@ footer .footer-container .section3 h5 {
   }
   .downloads .container .card .text-area h2 {
     font-size: 1.2rem;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  footer .section2 {
-    display: none;
-  }
-  footer .section3 {
-    width: 70vw !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

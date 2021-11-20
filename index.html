@@ -210,17 +210,23 @@
           <img src="./Images/logo-white.svg" alt="Logo" />
           <h3>Yet another lineage os based rom</h3>
           <div class="icons" style="font-size: 1.3rem">
-            <a href="#"><i class="fab fa-github icon fa-lg"></i></a>
-            <a href="#"><i class="fab fa-telegram fa-lg"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="https://github.com/ProjectKasumi"
+              ><i class="fab fa-github icon fa-lg"></i
+            ></a>
+            <a href="https://t.me/KasumiChat"
+              ><i class="fab fa-telegram fa-lg"></i
+            ></a>
+            <a href="https://twitter.com/Kasumi_Project"
+              ><i class="fab fa-twitter fa-lg"></i
+            ></a>
           </div>
         </div>
         <div class="section2">
           <ul>
-            <li>Home</li>
-            <li>Downloads</li>
-            <li>Screenshots</li>
-            <li>Support</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="./downloads.html">Downloads</a></li>
+            <li><a href="#features">Screenshots</a></li>
+            <li><a href="https://t.me/KasumiChat">Support</a></li>
           </ul>
         </div>
         <div class="section3">
@@ -284,10 +290,8 @@
       window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
-          console.log("down");
           document.querySelector("nav").style.top = "0vh";
         } else {
-          console.log("up");
           document.querySelector("nav").style.top = "-10vh";
         }
         prevScrollpos = currentScrollPos;
