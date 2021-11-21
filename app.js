@@ -13,3 +13,16 @@ navlinksLi.forEach((li) => {
     navLinks.classList.toggle("nav-active");
   });
 });
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  //card effect
+  effect: "coverflow",
+  coverflowEffect: {
+    rotate: 50,
+    slideShadows: false,
+  },
+});

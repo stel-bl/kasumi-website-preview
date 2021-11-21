@@ -187,17 +187,13 @@ nav {
       place-items: center;
       place-content: center;
       height: 100%;
-      .embla {
-        overflow: hidden;
-        width: clamp(40%, 40%, 60%);
+      .swiper {
+        width: 40%;
       }
-      .embla__container {
-        display: flex;
-      }
-      .embla__slide {
+      .swiper-slide {
         position: relative;
         flex: 1;
-        width: 100%;
+        width: 70%;
       }
       img {
         width: 40%;
@@ -595,14 +591,11 @@ footer {
       .features-image {
         width: 100%;
         padding: 1rem 0rem;
-        .embla {
+        .slider {
           overflow: hidden;
           width: 70%;
         }
-        .embla__container {
-          display: flex;
-        }
-        .embla__slide {
+        .swiper-slide {
           position: relative;
           flex: 1;
           width: 100%;
