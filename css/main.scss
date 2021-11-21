@@ -193,7 +193,7 @@ nav {
       .swiper-slide {
         position: relative;
         flex: 1;
-        width: 70%;
+        width: 100%;
       }
       img {
         width: 40%;
@@ -591,9 +591,9 @@ footer {
       .features-image {
         width: 100%;
         padding: 1rem 0rem;
-        .slider {
+        .swiper {
           overflow: hidden;
-          width: 70%;
+          width: 50%;
         }
         .swiper-slide {
           position: relative;
