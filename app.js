@@ -19,7 +19,16 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
 
-  //card effect
+  autoplay: {
+    delay: 3000,
+  },
+
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
+  },
+
+  //coverflow effect
   effect: "coverflow",
   coverflowEffect: {
     rotate: 50,
