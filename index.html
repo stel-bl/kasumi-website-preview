@@ -63,8 +63,8 @@
       <div class="home-text">
         <h1>Project Kasumi</h1>
         <p>
-          More than a custom rom, a new home, balancing your anime needs with your daily life! This is Kasumi!
-          おかえり、ユーザー！
+          More than a custom rom, a new home, balancing your anime needs with
+          your daily life! This is Kasumi! おかえり、ユーザー！
         </p>
         <a href="https://dl.ayokaacr.tk/4:/">
           <button class="download">Downloads</button>
@@ -103,10 +103,10 @@
         <div class="features-image">
           <div class="swiper">
             <div class="swiper-wrapper">
-              <img src="./images/ss1.webp" class="swiper-slide" />
-              <img src="./images/ss2.webp" class="swiper-slide" />
-              <img src="./images/ss4.webp" class="swiper-slide" />
-              <img src="./images/ss5.webp" class="swiper-slide" />
+              <img src="./Images/ss1.webp" class="swiper-slide" />
+              <img src="./Images/ss4.webp" class="swiper-slide" />
+              <img src="./Images/ss2.webp" class="swiper-slide" />
+              <img src="./Images/ss5.webp" class="swiper-slide" />
             </div>
           </div>
         </div>
@@ -118,13 +118,36 @@
         <div class="card">
           <div class="image-area">
             <img
+              src="https://avatars.githubusercontent.com/u/83128586?v=4"
+              alt="icon"
+            />
+          </div>
+          <div class="text-area">
+            <h1>Yuki</h1>
+            <h3>Founder | Developer</h3>
+            <div class="icons" style="font-size: 1.3rem">
+              <a href="https://github.com/AITEx64" target="blank"
+                ><i class="fab fa-github fa-lg"></i
+              ></a>
+              <a href="https://t.me/AITEx64" target="blank"
+                ><i class="fab fa-telegram fa-lg"></i
+              ></a>
+              <a href="https://twitter.com/plsheadpats" target="blank"
+                ><i class="fab fa-twitter fa-lg"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-area">
+            <img
               src="https://avatars.githubusercontent.com/u/39265461?v=4"
               alt="icon"
             />
           </div>
           <div class="text-area">
             <h1>Bedirhan Kurt</h1>
-            <h3>Founder | Developer</h3>
+            <h3>Lead Developer</h3>
             <div class="icons" style="font-size: 1.3rem">
               <a href="https://github.com/windowz414" target="blank"
                 ><i class="fab fa-github fa-lg"></i
@@ -134,6 +157,29 @@
               ></a>
               <a href="https://twitter.com/WindowZ414" target="blank"
                 ><i class="fab fa-twitter fa-lg"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-area">
+            <img src="./Images/Ayuko.jpg" alt="icon" />
+          </div>
+          <div class="text-area">
+            <h1>Ayuko</h1>
+            <h3>Lead designer</h3>
+            <div class="icons" style="font-size: 1.3rem">
+              <a
+                target="blank"
+                href="https://www.youtube.com/channel/UCEOXRMlL8plbLNuS8eT_2nw"
+                target="blank"
+                ><i class="fab fa-youtube fa-lg"></i
+              ></a>
+              <a href="https://www.twitch.tv/v_ayuko" target="blank"
+                ><i class="fab fa-twitch fa-lg"></i
+              ></a>
+              <a href="https://github.com/ayukoVTuber" target="blank"
+                ><i class="fab fa-github fa-lg"></i
               ></a>
             </div>
           </div>
@@ -184,29 +230,6 @@
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="image-area">
-            <img src="./Images/Ayuko.jpg" alt="icon" />
-          </div>
-          <div class="text-area">
-            <h1>Ayuko</h1>
-            <h3>Lead designer</h3>
-            <div class="icons" style="font-size: 1.3rem">
-              <a
-                target="blank"
-                href="https://www.youtube.com/channel/UCEOXRMlL8plbLNuS8eT_2nw"
-                target="blank"
-                ><i class="fab fa-youtube fa-lg"></i
-              ></a>
-              <a href="https://www.twitch.tv/v_ayuko" target="blank"
-                ><i class="fab fa-twitch fa-lg"></i
-              ></a>
-              <a href="https://github.com/ayukoVTuber" target="blank"
-                ><i class="fab fa-github fa-lg"></i
-              ></a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <div class="footer-box-container">
@@ -240,7 +263,7 @@
         <div class="section2">
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="./downloads.html">Downloads</a></li>
+            <li><a href="https://dl.ayokaacr.tk/4:/">Downloads</a></li>
             <li><a href="#features">Screenshots</a></li>
             <li><a href="https://t.me/KasumiChat">Support</a></li>
           </ul>
@@ -253,6 +276,7 @@
           </h5>
         </div>
       </div>
+      <h1 class="ayuworks">This rom is powered by ayuworks.xyz</h1>
     </footer>
     <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
     <script
@@ -260,47 +284,6 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript">
-      const emblaNode = document.querySelector(".embla");
-
-      const autoplay = (embla, interval) => {
-        let timer = 0;
-
-        const play = () => {
-          stop();
-          requestAnimationFrame(
-            () => (timer = window.setTimeout(next, interval))
-          );
-        };
-
-        const stop = () => {
-          window.clearTimeout(timer);
-          timer = 0;
-        };
-
-        const next = () => {
-          if (embla.canScrollNext()) {
-            embla.scrollNext();
-          } else {
-            embla.scrollTo(0);
-          }
-          play();
-        };
-
-        return { play, stop };
-      };
-
-      const options = {
-        loop: true,
-      };
-      // Initialize the carousel
-      const embla = EmblaCarousel(emblaNode, options);
-      const autoplayer = autoplay(embla, 3000);
-      embla.on("init", autoplayer.play);
-      embla.on("pointerDown", autoplayer.stop);
-      embla.on("pointerUp", autoplayer.play);
-    </script>
-
     <script>
       var prevScrollpos = window.pageYOffset;
       window.onscroll = function () {

@@ -18,7 +18,6 @@ const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
-
   autoplay: {
     delay: 3000,
   },
@@ -28,10 +27,12 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".prev",
   },
 
-  //coverflow effect
-  effect: "coverflow",
-  coverflowEffect: {
-    rotate: 50,
-    slideShadows: false,
+  //cards effect
+  effect: "cards",
+  cardsEffect: {
+    slideShadows: true,
+  },
+  mousewheel: {
+    invert: true,
   },
 });
