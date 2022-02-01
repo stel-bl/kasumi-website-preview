@@ -482,6 +482,11 @@ footer .ayuworks {
   margin: 10px 0px;
 }
 
+footer .ayuworks a {
+  text-decoration: none;
+  color: white;
+}
+
 footer .footer-container {
   width: 100%;
   display: -webkit-box;
@@ -746,23 +751,14 @@ footer .footer-container .section2 ul li a {
     width: 100% !important;
   }
   footer .footer-container .section3 h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   footer .footer-container .section3 h5 {
     width: 90%;
+    font-weight: lighter;
   }
-  .downloads {
-    height: auto;
-  }
-  .downloads .container .card {
-    width: 90vw;
-    margin: 4vh 0vh;
-  }
-  .downloads .container .card .text-area {
-    margin: 0vh 2vh;
-  }
-  .downloads .container .card .text-area h2 {
-    font-size: 1.2rem;
+  footer .ayuworks {
+    font-size: 1.3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -327,6 +327,10 @@ footer {
     color: white;
     font-weight: lighter;
     margin: 10px 0px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
   .footer-container {
     width: 100%;
@@ -556,27 +560,16 @@ footer {
       .section3 {
         width: 100% !important;
         h1 {
-          font-size: 1.5rem;
+          font-size: 2rem;
         }
         h5 {
           width: 90%;
+          font-weight: lighter;
         }
       }
     }
-  }
-  .downloads {
-    height: auto;
-    .container {
-      .card {
-        width: 90vw;
-        margin: 4vh 0vh;
-        .text-area {
-          margin: 0vh 2vh;
-          h2 {
-            font-size: 1.2rem;
-          }
-        }
-      }
+    .ayuworks {
+      font-size: 1.3rem;
     }
   }
 }
