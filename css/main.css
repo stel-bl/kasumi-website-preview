@@ -556,7 +556,7 @@ footer .footer-container .section2 ul li a {
   nav {
     z-index: 4;
     position: absolute;
-    top: -5vh;
+    top: 0vh;
     background: transparent;
   }
   nav .nav-links {
