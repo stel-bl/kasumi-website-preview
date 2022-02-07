@@ -46,10 +46,26 @@ body {
   width: 25px;
   height: 3px;
   background: white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .hamburger .line2 {
   margin: 5px 0px;
+}
+
+.hamburger-active .line2 {
+  opacity: 0;
+}
+
+.hamburger-active .line1 {
+  -webkit-transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-active .line3 {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
 }
 
 nav {

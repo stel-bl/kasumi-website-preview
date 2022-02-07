@@ -34,9 +34,22 @@ body {
     width: 25px;
     height: 3px;
     background: white;
+    transition: all 0.2s ease;
   }
   .line2 {
     margin: 5px 0px;
+  }
+}
+
+.hamburger-active {
+  .line2 {
+    opacity: 0;
+  }
+  .line1 {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .line3 {
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
 
