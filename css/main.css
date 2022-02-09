@@ -12,7 +12,7 @@ html {
 body {
   font-family: "Red Hat Text", sans-serif;
   overflow-x: hidden;
-  background: #dfdfdf;
+  background: #e698e3;
 }
 
 .hamburger {
@@ -20,7 +20,7 @@ body {
   top: 1.5rem;
   right: 1rem;
   z-index: 5;
-  background: #5c68d3;
+  background: #9d2c9e;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -84,7 +84,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: white;
+  background: #424242;
   -webkit-transition: top 0.3s ease;
   transition: top 0.3s ease;
 }
@@ -116,7 +116,7 @@ nav .nav-links li {
 
 nav .nav-links li a {
   text-decoration: none;
-  color: #424242;
+  color: #f0f0f0;
 }
 
 .home {
@@ -131,7 +131,7 @@ nav .nav-links li a {
       justify-content: space-around;
   position: relative;
   overflow: hidden;
-  background: #dfdfdf;
+  background: #212121;
 }
 
 .home .circle {
@@ -139,7 +139,7 @@ nav .nav-links li a {
   height: clamp(50vw, 60vw, 80vw);
   border-radius: 50%;
   position: absolute;
-  background: #5c68d3c4;
+  background: #9d2c9e;
   top: 15vh;
   right: -15vh;
   z-index: 0;
@@ -148,7 +148,7 @@ nav .nav-links li a {
 .home .home-text {
   width: clamp(50%, 65%, 70%);
   padding: 0rem 3rem;
-  color: #424242;
+  color: #f0f0f0;
   margin-top: 10vh;
 }
 
@@ -168,8 +168,8 @@ nav .nav-links li a {
 .home .home-text .download {
   padding: 0.7rem 4rem;
   font-size: 1.3rem;
-  background: #5c68d3;
-  color: white;
+  background: white;
+  color: #9d2c9e;
   border-radius: 0.3rem;
   border: none;
   cursor: pointer;
@@ -179,8 +179,8 @@ nav .nav-links li a {
 
 .home .home-text .download:hover {
   background: transparent;
-  color: #424242;
-  outline: 2px solid #5c68d3;
+  color: white;
+  outline: 2px solid white;
 }
 
 .home .home-image {
@@ -210,15 +210,15 @@ nav .nav-links li a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100vw;
-  background: #dfdfdf;
+  background: #212121;
 }
 
 .features .main-head {
-  color: #424242;
+  color: #f0f0f0;
   font-size: 3rem;
   text-decoration: underline;
-  -webkit-text-decoration-color: #5c68d3;
-          text-decoration-color: #5c68d3;
+  -webkit-text-decoration-color: #9d2c9e;
+          text-decoration-color: #9d2c9e;
   text-decoration-thickness: 10px;
   text-underline-offset: -3px;
 }
@@ -260,7 +260,7 @@ nav .nav-links li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #424242;
+  color: #f0f0f0;
   margin: 2vh 0vh;
 }
 
@@ -309,15 +309,15 @@ nav .nav-links li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #dfdfdf;
+  background: #212121;
 }
 
 .team .main-head {
-  color: #424242;
+  color: #f0f0f0;
   font-size: 3rem;
   text-decoration: underline;
-  -webkit-text-decoration-color: #5c68d3;
-          text-decoration-color: #5c68d3;
+  -webkit-text-decoration-color: #9d2c9e;
+          text-decoration-color: #9d2c9e;
   text-decoration-thickness: 10px;
   text-underline-offset: -3px;
 }
@@ -411,8 +411,7 @@ nav .nav-links li a {
           justify-content: center;
   width: 100vw;
   padding: 2vw 0vw;
-  background: #7280ff;
-  background-image: url("../Images/background.svg");
+  background: #212121;
 }
 
 .footer-box-container .footer-box {
@@ -430,8 +429,8 @@ nav .nav-links li a {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: white;
-  color: #424242;
+  background: #424242;
+  color: #f0f0f0;
   z-index: 2;
   border-radius: 0.2rem;
 }
@@ -462,7 +461,7 @@ nav .nav-links li a {
 .footer-box-container .footer-box div .download {
   padding: 0.7vw 3vw;
   font-size: 1.5vw;
-  background: #5c68d3;
+  background: #9d2c9e;
   color: white;
   border-radius: 0.3rem;
   border: none;
@@ -473,14 +472,14 @@ nav .nav-links li a {
 
 .footer-box-container .footer-box div .download:hover {
   background: transparent;
-  color: #424242;
-  outline: 2px solid #5c68d3;
+  color: #f0f0f0;
+  outline: 2px solid #9d2c9e;
 }
 
 footer {
   width: 100%;
   padding: 2vw 0vw;
-  background: #5c68d3;
+  background: #212121;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -493,14 +492,14 @@ footer {
 
 footer .ayuworks {
   text-align: center;
-  color: white;
+  color: #f0f0f0;
   font-weight: lighter;
   margin: 10px 0px;
 }
 
 footer .ayuworks a {
   text-decoration: none;
-  color: white;
+  color: #f0f0f0;
 }
 
 footer .footer-container {
@@ -510,7 +509,7 @@ footer .footer-container {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: white;
+  color: #f0f0f0;
 }
 
 footer .footer-container .section1,
@@ -545,7 +544,7 @@ footer .footer-container .section1 h3 {
 
 footer .footer-container .section1 .icons a {
   text-decoration: none;
-  color: white;
+  color: #f0f0f0;
   margin: 10px;
 }
 
@@ -555,7 +554,7 @@ footer .footer-container .section2 ul {
 
 footer .footer-container .section2 ul li a {
   text-decoration: none;
-  color: white;
+  color: #f0f0f0;
   font-size: 1.3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -580,7 +579,7 @@ footer .footer-container .section2 ul li a {
     top: 0vh;
     width: 100vw;
     height: 50vh;
-    background: #c9c9c9;
+    background: #212121;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -598,7 +597,7 @@ footer .footer-container .section2 ul li a {
   nav .nav-links li {
     margin: 4vh 0vh;
     font-size: 25px;
-    color: #424242;
+    color: #f0f0f0;
   }
   nav .nav-active {
     -webkit-transform: translateY(0vh);
