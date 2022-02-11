@@ -12,7 +12,7 @@ html {
 body {
   font-family: "Red Hat Text", sans-serif;
   overflow-x: hidden;
-  background: #e698e3;
+  background: #dfdfdf;
 }
 
 .hamburger {
@@ -20,7 +20,7 @@ body {
   top: 1.5rem;
   right: 1rem;
   z-index: 5;
-  background: #9d2c9e;
+  background: #5c68d3;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -84,7 +84,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #424242;
+  background: white;
   -webkit-transition: top 0.3s ease;
   transition: top 0.3s ease;
 }
@@ -116,7 +116,7 @@ nav .nav-links li {
 
 nav .nav-links li a {
   text-decoration: none;
-  color: #f0f0f0;
+  color: #424242;
 }
 
 .home {
@@ -131,7 +131,7 @@ nav .nav-links li a {
       justify-content: space-around;
   position: relative;
   overflow: hidden;
-  background: #212121;
+  background: #dfdfdf;
 }
 
 .home .circle {
@@ -139,7 +139,7 @@ nav .nav-links li a {
   height: clamp(50vw, 60vw, 80vw);
   border-radius: 50%;
   position: absolute;
-  background: #9d2c9e;
+  background: #5c68d3c4;
   top: 15vh;
   right: -15vh;
   z-index: 0;
@@ -148,7 +148,7 @@ nav .nav-links li a {
 .home .home-text {
   width: clamp(50%, 65%, 70%);
   padding: 0rem 3rem;
-  color: #f0f0f0;
+  color: #424242;
   margin-top: 10vh;
 }
 
@@ -168,8 +168,8 @@ nav .nav-links li a {
 .home .home-text .download {
   padding: 0.7rem 4rem;
   font-size: 1.3rem;
-  background: white;
-  color: #9d2c9e;
+  background: #5c68d3;
+  color: white;
   border-radius: 0.3rem;
   border: none;
   cursor: pointer;
@@ -179,8 +179,8 @@ nav .nav-links li a {
 
 .home .home-text .download:hover {
   background: transparent;
-  color: white;
-  outline: 2px solid white;
+  color: #424242;
+  outline: 2px solid #5c68d3;
 }
 
 .home .home-image {
@@ -210,15 +210,15 @@ nav .nav-links li a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100vw;
-  background: #212121;
+  background: #dfdfdf;
 }
 
 .features .main-head {
-  color: #f0f0f0;
+  color: #424242;
   font-size: 3rem;
   text-decoration: underline;
-  -webkit-text-decoration-color: #9d2c9e;
-          text-decoration-color: #9d2c9e;
+  -webkit-text-decoration-color: #5c68d3;
+          text-decoration-color: #5c68d3;
   text-decoration-thickness: 10px;
   text-underline-offset: -3px;
 }
@@ -260,7 +260,7 @@ nav .nav-links li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #f0f0f0;
+  color: #424242;
   margin: 2vh 0vh;
 }
 
@@ -309,15 +309,15 @@ nav .nav-links li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #212121;
+  background: #dfdfdf;
 }
 
 .team .main-head {
-  color: #f0f0f0;
+  color: #424242;
   font-size: 3rem;
   text-decoration: underline;
-  -webkit-text-decoration-color: #9d2c9e;
-          text-decoration-color: #9d2c9e;
+  -webkit-text-decoration-color: #5c68d3;
+          text-decoration-color: #5c68d3;
   text-decoration-thickness: 10px;
   text-underline-offset: -3px;
 }
@@ -411,7 +411,8 @@ nav .nav-links li a {
           justify-content: center;
   width: 100vw;
   padding: 2vw 0vw;
-  background: #212121;
+  background: #7280ff;
+  background-image: url("../Images/background.svg");
 }
 
 .footer-box-container .footer-box {
@@ -429,8 +430,8 @@ nav .nav-links li a {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: #424242;
-  color: #f0f0f0;
+  background: white;
+  color: #424242;
   z-index: 2;
   border-radius: 0.2rem;
 }
@@ -461,7 +462,7 @@ nav .nav-links li a {
 .footer-box-container .footer-box div .download {
   padding: 0.7vw 3vw;
   font-size: 1.5vw;
-  background: #9d2c9e;
+  background: #5c68d3;
   color: white;
   border-radius: 0.3rem;
   border: none;
@@ -472,14 +473,14 @@ nav .nav-links li a {
 
 .footer-box-container .footer-box div .download:hover {
   background: transparent;
-  color: #f0f0f0;
-  outline: 2px solid #9d2c9e;
+  color: #424242;
+  outline: 2px solid #5c68d3;
 }
 
 footer {
   width: 100%;
   padding: 2vw 0vw;
-  background: #212121;
+  background: #5c68d3;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -492,14 +493,14 @@ footer {
 
 footer .ayuworks {
   text-align: center;
-  color: #f0f0f0;
+  color: white;
   font-weight: lighter;
   margin: 10px 0px;
 }
 
 footer .ayuworks a {
   text-decoration: none;
-  color: #f0f0f0;
+  color: white;
 }
 
 footer .footer-container {
@@ -509,7 +510,7 @@ footer .footer-container {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: #f0f0f0;
+  color: white;
 }
 
 footer .footer-container .section1,
@@ -536,6 +537,7 @@ footer .footer-container .section1 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding: 0rem 1rem;
 }
 
 footer .footer-container .section1 h3 {
@@ -544,7 +546,7 @@ footer .footer-container .section1 h3 {
 
 footer .footer-container .section1 .icons a {
   text-decoration: none;
-  color: #f0f0f0;
+  color: white;
   margin: 10px;
 }
 
@@ -554,7 +556,7 @@ footer .footer-container .section2 ul {
 
 footer .footer-container .section2 ul li a {
   text-decoration: none;
-  color: #f0f0f0;
+  color: white;
   font-size: 1.3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -579,7 +581,7 @@ footer .footer-container .section2 ul li a {
     top: 0vh;
     width: 100vw;
     height: 50vh;
-    background: #212121;
+    background: #c9c9c9;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -597,7 +599,7 @@ footer .footer-container .section2 ul li a {
   nav .nav-links li {
     margin: 4vh 0vh;
     font-size: 25px;
-    color: #f0f0f0;
+    color: #424242;
   }
   nav .nav-active {
     -webkit-transform: translateY(0vh);
@@ -766,7 +768,7 @@ footer .footer-container .section2 ul li a {
     width: 100% !important;
   }
   footer .footer-container .section3 h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   footer .footer-container .section3 h5 {
     width: 90%;
