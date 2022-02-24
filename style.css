@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .svg {
+  width: 30%;
+}
+
+.container .text {
+  color: #272727c4;
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+  line-height: 3.2rem;
+}
+
+.container .text h3 a {
+  text-decoration: underline;
+  color: #5c68d3c4;
+}
+
+@media only screen and (max-width: 700px) {
+  .container .svg {
+    width: 90%;
+  }
+  .container .text {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+}
