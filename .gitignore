@@ -5,3 +5,8 @@
 
 # Vim/GNU Nano swap
 *.swp
+
+# Windows Zone Identifier stream for files (for copying files from
+# Windows to WSL using Windows Explorer after downloading them from
+# the Internet)
+*:Zone.Identifier
