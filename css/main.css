@@ -12,7 +12,7 @@ html {
 body {
   font-family: "Red Hat Text", sans-serif;
   overflow-x: hidden;
-  background: #dfdfdf;
+  background: #ddffee;
 }
 
 .hamburger {
@@ -20,7 +20,7 @@ body {
   top: 1.5rem;
   right: 1rem;
   z-index: 5;
-  background: #5c68d3;
+  background: #33ddaa;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -84,7 +84,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: white;
+  background: #33ddaa;
   -webkit-transition: top 0.3s ease;
   transition: top 0.3s ease;
 }
@@ -116,7 +116,7 @@ nav .nav-links li {
 
 nav .nav-links li a {
   text-decoration: none;
-  color: #424242;
+  color: #ffffff;
 }
 
 .home {
@@ -131,7 +131,7 @@ nav .nav-links li a {
       justify-content: space-around;
   position: relative;
   overflow: hidden;
-  background: #dfdfdf;
+  background: #ffffff;
 }
 
 .home .circle {
@@ -139,7 +139,7 @@ nav .nav-links li a {
   height: clamp(50vw, 60vw, 80vw);
   border-radius: 50%;
   position: absolute;
-  background: #5c68d3c4;
+  background: #ddffee;
   top: 15vh;
   right: -15vh;
   z-index: 0;
@@ -155,6 +155,7 @@ nav .nav-links li a {
 .home .home-text h1 {
   font-size: 4.5vw;
   font-weight: bold;
+  color: #424242;
 }
 
 .home .home-text p {
@@ -163,12 +164,13 @@ nav .nav-links li a {
   width: clamp(60%, 70%, 80%);
   font-weight: lighter;
   margin: 2vh 0;
+  color: #424242;
 }
 
 .home .home-text .download {
   padding: 0.7rem 4rem;
   font-size: 1.3rem;
-  background: #5c68d3;
+  background: #33ddaa;
   color: white;
   border-radius: 0.3rem;
   border: none;
@@ -180,7 +182,7 @@ nav .nav-links li a {
 .home .home-text .download:hover {
   background: transparent;
   color: #424242;
-  outline: 2px solid #5c68d3;
+  outline: 2px solid #33ddaa;
 }
 
 .home .home-image {
@@ -210,15 +212,15 @@ nav .nav-links li a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100vw;
-  background: #dfdfdf;
+  background: #ffffff;
 }
 
 .features .main-head {
   color: #424242;
   font-size: 3rem;
   text-decoration: underline;
-  -webkit-text-decoration-color: #5c68d3;
-          text-decoration-color: #5c68d3;
+  -webkit-text-decoration-color: #ddffee;
+          text-decoration-color: #ddffee;
   text-decoration-thickness: 10px;
   text-underline-offset: -3px;
 }
@@ -309,7 +311,7 @@ nav .nav-links li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #dfdfdf;
+  background: #ffffff;
 }
 
 .team .main-head {
@@ -411,7 +413,7 @@ nav .nav-links li a {
           justify-content: center;
   width: 100vw;
   padding: 2vw 0vw;
-  background: #7280ff;
+  background: #33ddaa;
   background-image: url("../Images/background.svg");
 }
 
@@ -462,7 +464,7 @@ nav .nav-links li a {
 .footer-box-container .footer-box div .download {
   padding: 0.7vw 3vw;
   font-size: 1.5vw;
-  background: #5c68d3;
+  background: #33ddaa;
   color: white;
   border-radius: 0.3rem;
   border: none;
@@ -474,13 +476,13 @@ nav .nav-links li a {
 .footer-box-container .footer-box div .download:hover {
   background: transparent;
   color: #424242;
-  outline: 2px solid #5c68d3;
+  outline: 2px solid #33ddaa;
 }
 
 footer {
   width: 100%;
   padding: 2vw 0vw;
-  background: #5c68d3;
+  background: #33ddaa;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -581,7 +583,7 @@ footer .footer-container .section2 ul li a {
     top: 0vh;
     width: 100vw;
     height: 50vh;
-    background: #c9c9c9;
+    background: #33ddaa;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -599,7 +601,7 @@ footer .footer-container .section2 ul li a {
   nav .nav-links li {
     margin: 4vh 0vh;
     font-size: 25px;
-    color: #424242;
+    color: #ffffff;
   }
   nav .nav-active {
     -webkit-transform: translateY(0vh);
@@ -615,9 +617,6 @@ footer .footer-container .section2 ul li a {
     position: absolute;
     top: 2rem;
     left: 1.5rem;
-  }
-  nav .logo2 img {
-    width: 60%;
   }
   .home {
     width: 100vw;
